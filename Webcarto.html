@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!-- indique que notre fichier est en XML -->
+<html>
+<head> <!--La balise head : on va y mettre tous les éléments non-visuels : les méta-données-->    
+    <meta charset="utf-8" /> <title>La déperméabilisation des sols dans le Grand Lyon</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/Webcarto.css" />
+    <!-- Lien vers les fichiers CSS de MarkerCluster -->
+    <link rel="stylesheet" href="css/MarkerCluster.css">
+    <link rel="stylesheet" href="css/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/leaflet.markercluster.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/leaflet.markercluster.js"></script>
+    <script src="js/MarkerCluster.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data/CLC.js"></script>
+</head>
+<body> <!-- La balise body, on va y mettre tous les éléments visuels : le contenu-->
+    <h1>La déperméabilisation des sols dans le Grand Lyon</h1>
+    <h3>Où faut-il désimperméabiliser et pourquoi ?</h3>  
+    <div style="text-align: center;">
+        <a href="https://www.cerema.fr/fr/actualites/desimpermeabilisation-renaturation-sols-serie-fiches-du">
+            Désimperméabilisation et renaturation des sols : une série de fiches du Cerema
+        </a>
+    </div>
+ <br><br>
+    <div id="infoBox" style="display: none;">
+        <button id="closeInfo">Fermer</button>
+        <div id="infoBoxContent"></div>
+    </div>
+    <div id="map" style="height: 70vh; width: 100%;"></div>
+    <p>Réalisée par Lily Gentaz & Myriam Moustaid dans le cadre du Master 2 Géonum</p>
+    <p>Cours de Mickael Perrier, WebCarto 2024/2025</p>
+    <img src=https://mastergeonum.org/wp-content/uploads/2021/10/rvb_original.png />
+    <div id="info">_</div>   
+</body>
+<script type="text/javascript" src="js/Webcarto.js"></script>
+</html>
+
+
