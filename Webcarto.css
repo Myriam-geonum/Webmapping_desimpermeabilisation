@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(180, 198, 167);
+    position: left;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #2F4F4F;
+    margin: 0; 
+    padding: 0; 
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #578064;
+    margin: 0; 
+    padding: 0; 
+}
+
+a {
+    font-size: 10px;
+}
+
+#map {
+    height: calc(100vh - 150px); /* La carte occupe toute la hauteur de l'écran sauf 150px en bas */
+}
+
+#grandLyonCoordinates {
+    width: 800px;
+    height: 1500px;
+}
+
+p {
+    font-size: 15px;
+    color: #5b5d5c;
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+}
+
+img {
+    display: block; /* Pour que l'image soit un bloc et qu'on puisse la centrer */
+    margin: 2px auto; /* Centrer l'image avec une marge auto */
+    max-width: 3%; /* Limiter la taille maximale de l'image (80% de la largeur de son parent) */
+    height: auto; /* Maintenir le ratio de l'image */
+}
+
+.info.legend {
+    background-color: white;
+    border-color: #5b5d5c;
+    padding: 2px;
+    font-size: 8px;
+    border-radius: 1px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.info.legend i {
+    margin-right: 5px;  /* Espace entre l'icône et le texte */
+    vertical-align: middle; /* Centrer les icônes et les textes */
+}
+
+
+#infoBox {
+    position: absolute;
+    top: 230px;
+    right: 10px;
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 14px;
+}
+
+
+#infoBoxTitle {
+    color: rgb(78, 105, 78); /* Titre en vert */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
